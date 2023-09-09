@@ -2,7 +2,9 @@
 	import '../app.postcss';
 </script>
 
-<nav class="flex items-center justify-center h-16 border-b-2">
+<nav
+	class="flex items-center justify-center h-16 border-b-2 bg-primary text-background border-dark"
+>
 	<ul class="flex gap-8">
 		<li><a href="/">Game</a></li>
 		<li><a href="/tutorial">How to play</a></li>
