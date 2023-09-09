@@ -9,10 +9,11 @@
 	</ul>
 </nav>
 
-<div class="p-12 min-h-[calc(100vh-64px)] flex flex-col shadow-md">
+<div class="p-12 min-h-[calc(100vh-64px)] flex flex-col shadow-md bg-background">
 	<slot />
 </div>
 
-<footer class="h-64 flex items-center justify-center">
-	<h1 class="text-xl">Prefixer</h1>
+<footer class="h-32 flex items-center justify-center flex-col bg-background">
+	<h2 class="">Prefixer by Mattis Møl Kristensen</h2>
+	<span>2023</span>
 </footer>
