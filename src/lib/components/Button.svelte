@@ -3,4 +3,6 @@
 	const dispatch = createEventDispatcher();
 </script>
 
-<button on:click={() => dispatch('click')}><slot /></button>
+<button class="py-2 px-4 border-2 rounded-sm" on:click={() => dispatch('click')}>
+	<slot />
+</button>

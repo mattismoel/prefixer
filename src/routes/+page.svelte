@@ -1,5 +1,6 @@
 <script lang="ts">
 	import InputPrompt from '$lib/components/InputPrompt.svelte';
+	import ScoreBar from '$lib/components/ScoreBar.svelte';
 	import { prefixes } from '$lib/prefixes';
 	import { highScore, score } from '$lib/stores/score';
 	import type { Question, SIPrefix, SIUnit } from '$lib/types/question';
@@ -52,7 +53,7 @@
 </script>
 
 <div class="flex-1 flex items-center justify-center flex-col">
-	<div class="flex flex-col gap-4">
+	<div class="flex flex-col">
 		<InputPrompt
 			{question}
 			on:guess={(e) => {
@@ -60,9 +61,10 @@
 			}}
 			on:reset={reset}
 		/>
-		<div class="w-full h-16 border-2 rounded-md">
-			<span>{$score}</span>
-			<span>{$highScore}</span>
+		<ScoreBar score={$score} highScore={$highScore} />
+		<div class="w-full flex justify-between">
+			<span>Score: {$score}</span>
+			<span>Highscore: {$highScore}</span>
 		</div>
 	</div>
 </div>
