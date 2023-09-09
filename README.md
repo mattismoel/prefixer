@@ -1,38 +1,20 @@
-# create-svelte
+# What is this project?
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+This project is aimed towards pracitising SI prefix conversions. You are trying to guess which base 10 exponent is required for converting from one SI prefix to another. The goal is to get as high of a score as possible without mistakes. The highscore is stored in local storage, so you do not loose progress when reloading the window.
 
-## Creating a project
+# Tools
 
-If you're seeing this, you've probably already done this step. Congrats!
+The project makes use of Svelte with the SvelteKit framework. For styling TailwindCSS is used.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+# Installation and setup steps
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Afer cloning the repository, run the following commands from within the source directory:
 
 ```bash
-npm run dev
+# Install dependencies
+npm i
 
-# or start the server and open the app in a new browser tab
+# Open project in browser as localhost
 npm run dev -- --open
+
 ```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
